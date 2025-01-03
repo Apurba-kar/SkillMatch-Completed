@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillMatch</title>
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1 id="chat-title"><span id="chat-partner"></span></h1>
+        </header>
+        <main class="chat-main">
+            <div id="chat-messages" class="chat-messages"></div>
+        </main>
+        <footer class="chat-footer">
+            <input id="chat-input" type="text" placeholder="Type your message..." autocomplete="off"/>
+            <button id="send-btn">Send</button>
+        </footer>
+    </div>
+    <script src="../js/chat_window.js" type="module"></script>
+</body>
+<style>
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.chat-header {
+    padding: 10px;
+    border-radius: 7px;
+    background: #1b057d;
+    color: #ffffff;
+    text-align: center;
+}
+.chat-main {
+    flex-grow: 1;
+    padding: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../images/SkillMatch_logo1.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-y: auto;
+}
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.chat-message {
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 70%;
+}
+.chat-message.sent {
+    align-self: flex-end;
+    background-color: #d1e7dd;
+}
+.chat-message.received {
+    align-self: flex-start;
+    background-color: #f8d7da;
+}
+.chat-footer {
+    display: flex;
+    padding: 10px;
+    background: #b6b6b6;
+    gap: 10px;
+}
+#chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+#send-btn {
+    padding: 10px 20px;
+    background: #fff;
+    color: #1b057d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#send-btn:hover {
+    background: #1b057d;
+    color: #fff;
+}
+</style>
+</html>
