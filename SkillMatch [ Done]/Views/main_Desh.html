@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillMatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../images/SkillMatch_logo1.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="nav_bar navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-md-none">
+                <img src="../images/SkillMatch_logo1.png" alt="SkillMatch Logo" style="width: 40px;">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color: #1b057d;"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <a class="navbar-brand d-none d-md-block" href="../Views/main_Desh.html">
+                    <img src="../images/SkillMatch_logo1.png" alt="SkillMatch Logo" style="width: 40px;">
+                    <span style="color: #1b057d;"></span>
+                </a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 mx-2 rounded hover-shadow" href="./main_Desh.html" style="transition: background-color 0.3s;">
+                            <i class="bi bi-house-door"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 mx-2 rounded hover-shadow" href="#about-section" style="transition: background-color 0.3s;">
+                            <i class="bi bi-info-circle"></i> AboutUs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 mx-2 rounded hover-shadow" href="./search.html" style="transition: background-color 0.3s;">
+                            <i class="bi bi-search"></i> SearchSkills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 mx-2 rounded hover-shadow" href="./posts.html" style="transition: background-color 0.3s;">
+                            <i class="bi bi-briefcase"></i> Posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 mx-2 rounded hover-shadow" href="./profile.html" style="transition: background-color 0.3s;">
+                            <i class="bi bi-person-circle"></i> MyProfile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 mx-2 rounded hover-shadow" href="./chats.html" style="transition: background-color 0.3s;">
+                            <i class="bi bi-chat"></i> ChatList</a>
+                    </li>
+                    <div class="auth-buttons ms-md-3">
+                        <button class="btn btn-primary rounded-pill px-4 py-2" id="logout-btn" style="font-weight: bold; border-radius: 20px;">
+                            <i class="bi bi-box-arrow-right"></i> Logout</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <div class="main">
+        <div class="hero-section">
+            <h1>Bridge the Gap Between Skills and Opportunities!</h1>
+            <p>Empowering individuals to connect, grow, and succeed in their careers.</p>
+        </div>
+    </div>
+    
+
+
+    <section class="about-contact" id="about-section">
+        <div class="container">
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>
+                    Welcome to <strong>SkillMatch</strong>, the platform that connects talent with opportunities. 
+                    We are dedicated to creating a seamless experience for individuals looking to enhance their careers, network, and upskill.
+                </p>
+                <p>
+                    At <strong>SkillMatch</strong>, we believe in the power of skills and opportunities coming together. 
+                    Whether you're a job seeker, freelancer, or organization, we're here to support your journey.
+                </p>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact-us">
+        <div class="footer-top">
+            <div class="footer-illustration"></div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-section">
+                <h4>About SkillMatch</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>For Users</h4>
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="bi bi-geo-alt"></i> <span>123 Avenue , Dhandad, India</span></li>
+                    <li><i class="bi bi-telephone"></i> <span> + 123 456 7890</span></li>
+                    <li><i class="bi bi-envelope"></i> <span>contact@skillmatch.com</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 SkillMatch. All rights reserved.</p>
+            <h5 class="mt-4">Follow Us</h5>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+        </div>
+    </footer>
+<script type="module" src="../js/auth.js"></script>
+</body>
+</html>
