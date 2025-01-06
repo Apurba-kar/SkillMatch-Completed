@@ -56,7 +56,7 @@ onAuthStateChanged(auth, async (user) => {
                 const isAvailable = profileData.isAvailable ? "Available" : "Not Available";
                 const availabilityClass = profileData.isAvailable ? "text-success" : "text-danger";
 
-                profilePhoto.src = profileData.profilePhoto || "/images/default_profile.png";
+                profilePhoto.src = profileData.profilePhoto || "../images/default_profile.png";
                 profileName.innerHTML = `<strong>Name:</strong> ${profileData.name || "No Name"}`;
                 profileTitle.innerHTML = `<strong>Title:</strong> ${profileData.title || "No Title"}`;
                 aboutMe.innerHTML = `<strong>About Me:</strong> ${profileData.aboutMe || "No About Me information."}`;
